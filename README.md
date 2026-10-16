@@ -2,7 +2,7 @@
 
 白紫色、银白长发的小龙女，陪你一起写代码。
 
-[English](README.en.md) · [安装指南](docs/INSTALL.md) · [视频预览](previews/preview.mp4) · [素材授权](LICENSE-ASSETS.md)
+[在线预览](https://yy20040412yy.github.io/gpt-dragon-girl-pet/) · [下载 v1.0.0](https://github.com/yy20040412yy/gpt-dragon-girl-pet/releases/tag/v1.0.0) · [English](README.en.md) · [安装指南](docs/INSTALL.md) · [视频预览](previews/preview.mp4) · [素材授权](LICENSE-ASSETS.md)
 
 <p align="center">
   <img src="previews/preview.gif" width="288" alt="GPT 小龙女九组动作动画预览">
