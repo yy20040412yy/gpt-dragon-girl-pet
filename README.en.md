@@ -2,7 +2,7 @@
 
 A silver-haired, violet-eyed chibi dragon companion for desktop clients that support custom Codex / ChatGPT Pets.
 
-[简体中文](README.md) · [Installation](docs/INSTALL.md) · [Video](previews/preview.mp4)
+[Live preview](https://yy20040412yy.github.io/gpt-dragon-girl-pet/) · [Download v1.0.0](https://github.com/yy20040412yy/gpt-dragon-girl-pet/releases/tag/v1.0.0) · [简体中文](README.md) · [Installation](docs/INSTALL.md) · [Video](previews/preview.mp4)
 
 <p align="center"><img src="previews/preview.gif" width="288" alt="Nine animated states of GPT Dragon Girl"></p>
 
