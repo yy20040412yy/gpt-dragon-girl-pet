@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="GPT 小龙女桌宠：九组动作、十六个视线方向，自定义 Codex / ChatGPT 桌面伙伴。">
+  <meta name="color-scheme" content="light dark">
+  <title>GPT 小龙女 · Dragon Girl Pet</title>
+  <style>
+    :root{--bg:#f6f3fb;--panel:#ffffffd9;--ink:#30283d;--muted:#766a88;--line:#e8e0f1;--accent:#7957b7;--soft:#eee6fb;--stage:#f0eafa;--shadow:0 22px 70px #69508012;font-family:Inter,"PingFang SC","Microsoft YaHei",system-ui,sans-serif;color:var(--ink);background:var(--bg)}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 12% 0,#e7def766,transparent 50%);min-height:100vh}a{color:var(--accent);text-underline-offset:4px}button,input{font:inherit}button,.button{border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:12px;padding:11px 16px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:7px}button:hover,.button:hover{border-color:var(--accent)}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #ac8bdd;outline-offset:4px}.primary{background:var(--accent);color:white;border-color:var(--accent)}.primary:hover{filter:brightness(1.07)}[hidden]{display:none!important}header,main,footer{max-width:1040px;margin:auto;padding-left:28px;padding-right:28px}header{display:flex;align-items:center;justify-content:space-between;padding-top:28px;padding-bottom:28px;font-size:13px}.wordmark{letter-spacing:.12em;font-size:12px;font-weight:750;display:flex;align-items:center;gap:10px}.spark{color:var(--accent);font-size:24px}nav{display:flex;gap:20px}nav a{color:var(--muted);text-decoration:none}.intro{padding:22px 0 30px}.eyebrow{font-size:11px;letter-spacing:.18em;color:var(--accent);font-weight:700}.intro h1{font-size:clamp(34px,6vw,52px);font-weight:650;letter-spacing:-.04em;margin:12px 0}.intro p{color:var(--muted);line-height:1.8;margin:0}.workspace{display:grid;grid-template-columns:minmax(300px,1fr) minmax(300px,.86fr);gap:22px}.panel{border:1px solid var(--line);background:var(--panel);border-radius:24px;box-shadow:var(--shadow);overflow:hidden}.stage{min-height:430px;background:radial-gradient(ellipse at 50% 40%,#fff9,transparent 65%),var(--stage);position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px 12px;transition:background .2s}.stage.dark{background:radial-gradient(ellipse at 50% 40%,#79609130,transparent 65%),#292335}.stage.checker{background-color:#fff;background-image:linear-gradient(45deg,#ede9f2 25%,transparent 25%),linear-gradient(-45deg,#ede9f2 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#ede9f2 75%),linear-gradient(-45deg,transparent 75%,#ede9f2 75%);background-size:24px 24px;background-position:0 0,0 12px,12px -12px,-12px 0}.state-tag{position:absolute;top:20px;left:20px;background:#ffffffd9;border:1px solid #ffffffcc;color:#705b90;border-radius:99px;padding:6px 11px;font-size:12px}canvas{max-width:100%;height:auto;display:block;filter:drop-shadow(0 14px 14px #6950800b)}.canvas-wrap{display:flex;align-items:center;justify-content:center;width:100%;min-height:340px}.stage-bar{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:15px 20px;font-size:12px;color:var(--muted)}.stage-bar button{font-size:12px;padding:7px 13px}.controls{padding:26px}.controls h2{font-size:15px;margin:0 0 7px}.hint{font-size:12px;color:var(--muted);line-height:1.7;margin:0 0 16px}.state-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.state-grid button{font-size:12px;padding:12px 5px;min-height:42px}.state-grid button[aria-pressed=true]{background:var(--soft);color:var(--accent);border-color:#c8b2e7}.divider{height:1px;background:var(--line);margin:23px 0}.range-line{display:flex;align-items:center;justify-content:space-between;font-size:13px;margin:13px 0 9px}.range-line output{font-size:12px;color:var(--accent);font-variant-numeric:tabular-nums}input[type=range]{accent-color:var(--accent);width:100%;margin:0;cursor:pointer}.check-line{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--muted);margin:10px 0}.check-line input{accent-color:var(--accent)}.swatches{display:flex;gap:8px}.swatches button{width:34px;height:28px;border-radius:8px;padding:0}.swatches button[aria-pressed=true]{outline:2px solid var(--accent);outline-offset:2px}.install{margin:24px 0;padding:25px 28px;display:flex;align-items:center;justify-content:space-between;gap:22px}.install h2{font-size:18px;margin:0 0 8px}.install p{color:var(--muted);font-size:13px;line-height:1.7;margin:0;max-width:570px}.install-actions{display:flex;gap:8px;flex-wrap:wrap;flex-shrink:0}.secondary-links{font-size:12px;display:flex;flex-wrap:wrap;gap:18px;margin:20px 0 32px}footer{color:var(--muted);font-size:11px;line-height:1.9;padding-top:5px;padding-bottom:28px}#status{min-height:18px;margin-top:8px;color:var(--muted);font-size:12px}.stage.dark .state-tag{background:#f7f1ffdf}noscript p{padding:20px;background:var(--soft)}
+    @media(max-width:760px){header,main,footer{padding-left:18px;padding-right:18px}header{padding-top:18px}nav{gap:14px}.intro{padding-top:12px}.workspace{grid-template-columns:1fr}.stage{min-height:390px}.controls{padding:22px}.install{align-items:flex-start;flex-direction:column;padding:22px}.install-actions{width:100%}.install-actions .button{flex:1}.intro p{font-size:14px}.canvas-wrap{min-height:310px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wordmark"><span class="spark" aria-hidden="true">✧</span> DRAGON GIRL</div>
+    <nav aria-label="项目导航"><a href="#install-help">安装说明</a><a id="source-link" href="README.en.md">English</a></nav>
+  </header>
+  <main>
+    <section class="intro">
+      <span class="eyebrow">A LITTLE COMPANION FOR YOUR DESKTOP</span>
+      <h1>GPT 小龙女</h1>
+      <p>银白长发、淡紫龙翼。一位陪你把事情做完的小伙伴。</p>
+    </section>
+    <div class="workspace">
+      <section class="panel" aria-label="桌宠动画预览">
+        <div class="stage" id="stage">
+          <span class="state-tag" id="state-label" aria-live="polite">待机 · Idle</span>
+          <div class="canvas-wrap"><canvas id="pet" width="576" height="624" style="width:288px" role="img" aria-label="GPT 小龙女待机动画"></canvas></div>
+        </div>
+        <div class="stage-bar"><span>动作演示 · 未连接实时任务</span><button id="pause" type="button">暂停</button></div>
+      </section>
+      <section class="panel controls" aria-label="动画控制">
+        <h2>今天是什么状态？</h2><p class="hint">点一下，看看她的反应。</p>
+        <div class="state-grid" id="state-buttons">
+          <button type="button" data-state="idle" aria-pressed="true">待机</button>
+          <button type="button" data-state="waving" aria-pressed="false">挥挥手</button>
+          <button type="button" data-state="jumping" aria-pressed="false">跳一下</button>
+          <button type="button" data-state="running-left" aria-pressed="false">向左走</button>
+          <button type="button" data-state="running" aria-pressed="false">思考中</button>
+          <button type="button" data-state="running-right" aria-pressed="false">向右走</button>
+          <button type="button" data-state="waiting" aria-pressed="false">等你回应</button>
+          <button type="button" data-state="review" aria-pressed="false">检查结果</button>
+          <button type="button" data-state="failed" aria-pressed="false">有点为难</button>
+        </div>
+        <div class="divider"></div>
+        <label class="range-line" for="direction">看向哪里 <output id="direction-value" for="direction">向上 · 0°</output></label>
+        <input id="direction" type="range" min="0" max="15" step="1" value="0" aria-label="十六个视线方向">
+        <label class="check-line"><input id="follow" type="checkbox">在预览区跟随光标</label>
+        <label class="range-line" for="scale">显示大小 <output id="scale-value" for="scale">1.5×</output></label>
+        <input id="scale" type="range" min="1" max="2" step="0.1" value="1.5">
+        <div class="range-line"><span>预览背景</span><div class="swatches" aria-label="预览背景">
+          <button type="button" data-bg="light" aria-label="浅紫背景" aria-pressed="true" style="background:#eee6fb"></button>
+          <button type="button" data-bg="dark" aria-label="深色背景" aria-pressed="false" style="background:#292335"></button>
+          <button type="button" data-bg="checker" aria-label="透明棋盘背景" aria-pressed="false" style="background:repeating-conic-gradient(#ede9f2 0 25%,white 0 50%) 0/12px 12px"></button>
+        </div></div>
+        <div id="status" role="status">正在请小龙女出来…</div>
+      </section>
+    </div>
+    <section class="panel install" aria-label="安装桌宠">
+      <div><h2>让她住进你的桌面</h2><p id="install-note">下载清单与图集，按安装说明放入桌宠目录。支持自定义 Pets 的电脑客户端可显示悬浮桌宠。</p></div>
+      <div class="install-actions"><a class="button primary" id="install-link" href="#" hidden>在 Codex 中安装 ↗</a><a class="button" href="#install-help">查看安装步骤</a></div>
+    </section>
+    <details class="panel" id="install-help" style="padding:20px 24px;margin-bottom:20px;font-size:13px;line-height:1.9">
+      <summary style="cursor:pointer;font-weight:600">安装到电脑客户端</summary>
+      <p>下载下方的“桌宠清单”和“透明图集”，保持文件名为 <code>pet.json</code> 与 <code>spritesheet.png</code>，放入同一个文件夹：</p>
+      <p>Windows：<code style="overflow-wrap:anywhere">%USERPROFILE%\.codex\pets\gpt-dragon-girl\</code><br>macOS / Linux：<code>~/.codex/pets/gpt-dragon-girl/</code></p>
+      <p>如果设置了 <code>CODEX_HOME</code>，请使用对应目录。重新打开客户端，在“设置 → Pets”选择“GPT小龙女”，输入 <code>/pet</code> 显示。</p>
+      <p>也可下载完整仓库或 Release 安装包，在解压后的目录运行：Windows 使用 <code>py -3 scripts/install.py</code>，macOS / Linux 使用 <code>python3 scripts/install.py</code>。脚本需要 Python 3.10+。</p>
+    </details>
+    <div class="secondary-links"><a href="spritesheet.png" download>下载透明图集</a><a href="pet.json" download>下载桌宠清单</a><a href="previews/preview.gif" download>下载 GIF 预览</a><a href="previews/preview.mp4">观看视频</a><a href="LICENSE-ASSETS.md">授权与署名</a></div>
+    <noscript><p>打开 <a href="previews/preview.gif">GIF 动画</a>查看桌宠，或展开上方的手动安装步骤。</p></noscript>
+  </main>
+  <footer>GPT Dragon Girl Pet contributors · 社区创作，与 OpenAI 无隶属关系。<br>代码 MIT · 项目贡献者有权许可的素材与文档 CC BY 4.0。参考角色与商标权利归各自权利人。</footer>
+  <script src="preview.js"></script>
+</body>
+</html>

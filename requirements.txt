@@ -1,0 +1,2 @@
+# Development / validation only. Installation has no third-party dependency.
+Pillow>=10.0

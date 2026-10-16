@@ -1,0 +1,27 @@
+name: Validate pet package
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt
+      - run: python scripts/validate.py
+      - name: Install into a temporary directory
+        run: python scripts/install.py --codex-home "${{ runner.temp }}/dragon-girl-smoke"
+      - name: Verify repeat installation
+        run: python scripts/install.py --codex-home "${{ runner.temp }}/dragon-girl-smoke"
+      - name: Uninstall into a backup
+        run: python scripts/install.py --codex-home "${{ runner.temp }}/dragon-girl-smoke" --uninstall
+      - run: python scripts/build_release.py

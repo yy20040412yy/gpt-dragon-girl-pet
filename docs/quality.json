@@ -1,0 +1,20 @@
+{
+  "version": "1.0.0",
+  "atlas": {
+    "path": "spritesheet.png",
+    "width": 1536,
+    "height": 2288,
+    "mode": "RGBA",
+    "sha256": "7a5a383a05ebcf0b3278825728fc497e072d8955ecc6163ec56714ce865a1e04"
+  },
+  "existingAssetReview": {
+    "structuralValidationPassed": true,
+    "jumpLiftPixels": 37,
+    "lookCenterDriftMaxPixels": 1.5
+  },
+  "knownLimitations": [
+    "Some neighboring look directions have subtle visual differences.",
+    "Some transitions between look directions are more pronounced than others.",
+    "Desktop overlay behavior depends on the installed client; the project does not implement a standalone overlay."
+  ]
+}
